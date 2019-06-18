@@ -243,12 +243,13 @@ nav[template=title] {
   height: 360px;
   overflow: hidden;
   width: 960px;
-  margin: 0 auto
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 .swiper-box[template=swiper] img {
   width: 100%;
-  height: 100%
+  height: 100%;
 }
 
 .swiper-box[template=swiper] .swiper-wrapper .text {
@@ -313,7 +314,7 @@ nav[template=title] {
 /* 广告条 */
 .show-bar {
   height: 70px;
-  margin: 20px;
+  margin: 0 20px;
   background-color: #c2c1c1;
   text-align: center;
   line-height: 70px;
@@ -321,6 +322,7 @@ nav[template=title] {
   cursor: pointer;
   overflow: hidden;
   display: block;
+  margin-bottom: -10px;
 }
 
 .show-bar a, .show-bar img {
@@ -347,6 +349,7 @@ nav[template=title] {
 
 .short-show-box {
   margin-left: 20px;
+  margin-top: 20px;
 }
 
 /* 块新闻列表 */
@@ -423,15 +426,31 @@ nav[template=title] {
 /* 短的轮播图 */
 .img-video-box {
   width: 285px;
-  height: 130px;
+  height: 160px;
   margin: 12px;
   position: relative;
+}
+
+.img-video-box a {
+  display: block;
+  width: 100%;
+  height: 130px;
+}
+.img-video-box center {
+  font-size: 16px;
+  line-height: 30px;
+  height: 30px;
+}
+
+.img-video-box center a {
+  height: unset;
+  line-height: 30px;
 }
 
 .img-video-box em {
   position: absolute;
   background: url('http://sports.people.com.cn/img/MAIN/2016/10/116825/images/play.png') no-repeat top center;
-  bottom: 15px;
+  bottom: 35px;
   left: 15px;
   width: 41px;
   height: 41px;
@@ -456,11 +475,6 @@ nav[template=title] {
   font-size: 12px;
   color: #595757;
   text-overflow: ellipsis;
-}
-
-.swiper-news li:first-child{
-  font-size: 16px;
-  padding-bottom: 10px;
 }
 
 .swiper-news li:before {

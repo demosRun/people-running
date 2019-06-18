@@ -9,7 +9,7 @@ $(function () {
     slidesPerView: 9
   })
 
-  $(".switch1 li").click(function(){
+  $(".switch1 li").hover(function(){
     $(".switch1 li").attr("class","");
     $(".headingNews").hide();
   
